@@ -94,7 +94,6 @@ function makeCardByTemplate(imgSrc, tagsArr, itemTitle, itemDescription, itemPri
     card.querySelector('h1').textContent = itemTitle;
     card.querySelector('p').textContent = itemDescription;
     card.querySelector('.price').textContent = itemPrice;
-    return card;
 
 
     tagsArr.forEach(function(item) {
@@ -103,6 +102,8 @@ function makeCardByTemplate(imgSrc, tagsArr, itemTitle, itemDescription, itemPri
         tag.textContent = item;
         card.querySelector('.tags').append(tag);
     })
+
+    return card;
 }
 
 
